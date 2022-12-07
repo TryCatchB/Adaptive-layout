@@ -9,7 +9,9 @@ a {
   text-decoration: none;
 }
 
-ul ol li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -17,7 +19,12 @@ img {
   vertical-align: top;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: inherit;
   font-size: inherit;
 }
@@ -28,7 +35,7 @@ body {
   line-height: 1;
 }
 
-/* .............................. */
+/* ........................ */
 
 body {
   font-family: Rubik;
@@ -44,8 +51,34 @@ body {
 }
 
 [class*="__container"] {
-  min-width: 1057px;
+  max-width: 1087px;
   margin: 0px auto;
+  padding: 0px 15px;
+}
+
+/* PC */
+@media (max-width: 1057px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 991.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+  }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 479.98px) {
 }
 
 .main {

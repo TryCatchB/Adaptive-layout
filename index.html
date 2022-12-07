@@ -11,15 +11,21 @@
       href="https://fonts.googleapis.com/css?family=Rubik:,regular,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Styles/index.css" />
+    <link rel="stylesheet" href="Styles/Header.css" />
+    <link rel="stylesheet" href="Styles/Menu.css" />
+    <link rel="stylesheet" href="Styles/Button.css" />
     <title>Adaptive layout</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
+      <header id="open" class="header">
+        <div id="close" class="header__container">
           <a href="" class="header__logo">
-            <nav class="header__menu menu">
+            <img src="Img/Logo.svg" alt="Logo" />
+          </a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
               <ul class="menu__list">
                 <li class="menu__item">
                   <a href="" class="menu__link">HOME</a>
@@ -31,14 +37,34 @@
                   <a href="" class="menu__link">SUPPORT</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">HOME</a>
+                  <a href="" class="menu__link">CONTACT US</a>
                 </li>
               </ul>
             </nav>
-          </a>
+          </div>
+          <div class="header__button">
+            <a href="" class="button button_blue">DOWNLOAD</a>
+            <a href="#open" class="icon_menu"><span></span></a>
+            <a href="#close" class="close_icon_menu"></a>
+          </div>
         </div>
       </header>
-      <main class="main">Content</main>
+      <main class="main">
+        <section>
+          <div class="get-started">
+            <div class="get-started__container">
+              <div class="get-started__content">
+                <div class="get-started__image">
+                  <img
+                    src="Img/Image.svg"
+                    alt="Pictuce, Where Doctor with child."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer class="footer">Footer</footer>
     </div>
   </body>
