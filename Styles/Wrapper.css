@@ -80,7 +80,3 @@ body {
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
 }
-
-.main {
-  flex: 1 1 auto;
-}
